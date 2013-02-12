@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/reset_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chronometer1"
+        android:layout_marginTop="40dp"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/start_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reset_but"
+        android:layout_toRightOf="@+id/reset_but"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/pause_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/start_but"
+        android:layout_toRightOf="@+id/start_but"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/stop_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pause_but"
+        android:layout_toRightOf="@+id/pause_but"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/get_time_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/reset_but"
+        android:layout_marginTop="20dp"
+        android:text="Get time" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/get_time_but"
+        android:layout_alignBottom="@+id/get_time_but"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/get_time_but" />
+
+    <com.yvelabs.chronometer2.Chronometer
+        android:id="@+id/chronometer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/time_tv"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp" >
+    </com.yvelabs.chronometer2.Chronometer>
+
+</RelativeLayout>

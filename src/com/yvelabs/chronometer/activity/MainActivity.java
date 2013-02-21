@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         
         chro.setPlayPauseAlphaAnimation(true);
         chro.setTypeFace(Chronometer.getTypeface_FONT_DUPLEX(this));
-        chro.setTextSize(50);
+        chro.setTextSize(25);
         chro.setTextBold(false);
         
 //      chro.getState();

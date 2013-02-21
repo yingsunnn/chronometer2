@@ -39,6 +39,10 @@ public class MainActivity extends Activity {
         chro.setTextSize(50);
         chro.setTextBold(false);
         
+//      chro.getState();
+//      chro.setTextColor();
+//      chro.setStartingTime(time);
+        
         resetBut.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

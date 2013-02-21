@@ -138,6 +138,9 @@ public class Chronometer extends LinearLayout {
 		secondsTV.getPaint().setFakeBoldText(flag);
 	}
 	
+	public String getState () {
+		return state;
+	}
 	
 	public boolean isPlayPauseAlphaAnimation() {
 		return isPlayPauseAlphaAnimation;
